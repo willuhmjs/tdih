@@ -1,7 +1,7 @@
 name: Deploy
 on: [push]
 jobs:
-  build-and-deploy:
+  deploy:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
